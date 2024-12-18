@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --brown: #0f1108;
+  --white: #f7f6f5;
+  --pink: #f2e9de;
+}
+
+body {
+  background-color: var(--pink);
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.15;
+  font-weight: 200;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 150vh; /* Full viewport height */
+    text-align: center; /* Center text */
+  }
+  
+  .header-title {
+    font-size: 3rem; /* Keep it bigger */
+    margin-bottom: 1.2em; /* Add vertical spacing below the title */
+  }
+  
+  .header-text {
+    font-size: 1.2rem;
+    margin-bottom: 2em; /* Add more space below the text */
+  }
+  
+  .let-me-see {
+    display: inline-block;
+    padding: 1em 2em;
+    font-size: 1rem;
+    margin-top: 1em; /* Add space above the button */
+  }
+  
+
+.let-me-see {
+  color: white;
+  background-color: black;
+  border: black;
+  border-radius: 0.25em;
+  padding: 1em 2em;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0.5em 0 var(--brown), 0 0 0.5em 0 var(--brown);
+}
+
+.let-me-see:hover {
+  border: white;
+  color: black;
+  background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 0.5em 1em; /* Reduced padding */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px; /* Restricting height */
+  }
+  
+  h1 {
+    font-size: 1.5rem; /* Reduced font size for the emoji */
+    margin: 0;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 0.9rem; /* Adjusted link size for better fit */
+  }
+  
+  section {
+    margin-top: 4em; /* Reduced spacing to match the smaller navbar */
+  }
+  
+
+.listen {
+  display: table;
+  margin: 1em 10em;
+}
+
+.arrow {
+  display: table;
+  margin: 10em auto;
+}
+
+.card-img {
+  border-radius: 0.25em;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.card-img:hover {
+  opacity: 50%;
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.images {
+  disply: inline;
+}
+
+.title:hover::after {
+  content: "";
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 5%;
+}
+
+.one:hover::after {
+  content: "Birthday par Mandir ho aana chahiye.";
+}
+
+.two:hover::after {
+  content: "Jammu Chalo re";
+}
+
+.three:hover::after {
+  content: "Ped par chadne ki kala";
+}
+
+.four:hover::after {
+  content: "Yoga se hi hoga";
+}
+
+.five:hover::after {
+  content: "Yayyy, Birthday Card";
+}
+
+.six:hover::after {
+  content: "Shaadi me nahi gye kaafi dino se.";
+}
+
+.seven:hover::after {
+  content: "Solo Trip";
+}
+
+.eight:hover::after {
+  content: "Hehehehehe";
+}
+
+.nine:hover::after {
+  content: "Phir se Assam aa jao";
+}
+
+.ten:hover::after {
+  content: "Jai Bhagwan Ji";
+}
+
+.eleven:hover::after {
+  content: "Latest Trip";
+}
+
+.twelve:hover::after {
+  content: "Yayyyy, finally Promotion";
+}
+
+section {
+  margin-top: 5em; /* Add space to prevent content from overlapping the fixed navbar */
+}
